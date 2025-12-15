@@ -36,7 +36,16 @@
 
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
-
+/* Separación entre secciones principales */
+section,
+.about_section,
+.choose_section,
+.brands_section,
+.exclusive_section,
+.footer_section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
 
 * {
     box-sizing: border-box !important;
@@ -463,6 +472,64 @@ button {
 }
 
 
+.about_section {
+  background: #faf8f6;
+  padding: 120px 0;
+}
+
+/* CONTENEDOR CENTRAL */
+.about_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* LOGO */
+.fitroom_logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.fitroom_logo img {
+  max-width: 180px;
+}
+
+/* GRID */
+.about_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* VIDEO */
+.about_right video {
+  width: 100%;
+  border-radius: 24px;
+  object-fit: cover;
+}
+
+/* TEXTO */
+.about_text {
+  max-width: 520px;
+  margin-bottom: 40px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .about_grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .about_right {
+    order: -1;
+  }
+}
+
+
+
 .experiencia {
   padding: 100px 0;
   background-color: #fffefc;
@@ -751,6 +818,16 @@ button {
   }
 }
 
+.choose_subtitle {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+
+
 /* =========================
    NATY MARIN PRESENTS
 ========================= */
@@ -766,7 +843,11 @@ button {
   font-weight: 700;
   color: #1a1a1a;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
+
+
+
 
 .brands_subtitle {
   font-size: 18px;
@@ -820,21 +901,23 @@ button {
 
 .read_bt_1 {
     width: 170px;
-    margin: 0 auto;
+    margin: 40px auto;
     text-align: center;
+    margin-bottom: 70px;
 }
+
 
 .read_bt_1 a {
     width: 100%;
     float: left;
-    font-size: 16px;
+    font-size: 14px;
     color: #F5F4ED ;
     background-color: #214436  ;
     text-align: center;
-    padding: 10px 0px;
+    padding: 10px 10px;
     border-radius: 30px;
-    margin-top: 10px;
-    margin-bottom: 100px;
+    margin-top: 20px;
+    margin-bottom: 40px;
     font-weight: bold;
     text-transform: uppercase;
 }
