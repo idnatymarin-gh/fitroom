@@ -872,6 +872,51 @@ button {
   line-height: 1.6;
 }
 
+/* ================================
+   SERVICIOS – GRID PRINCIPAL
+================================ */
+
+.exp_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 en una sola línea */
+  gap: 2.5rem;
+  align-items: start;
+}
+
+/* Cada bloque */
+.exp_bloque {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Imágenes */
+.exp_img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .exp_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .exp_grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 /* Grid de marcas */
 .brands_grid {
   display: grid;
