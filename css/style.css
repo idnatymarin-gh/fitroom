@@ -842,6 +842,44 @@ button {
 }
 /* blog section end */
 
+
+.reglamento_grid {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.acordeones-container {
+  max-width: 100%;
+  margin: 0;
+}
+
+.reglamento_video_box {
+  width: 100%;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.reglamento_video_box video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .reglamento_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reglamento_video_box {
+    margin-top: 40px;
+  }
+}
+
+
+
+
 .exclusive_section {
   padding: 100px 0;
   background: #fdfdfd;
