@@ -391,163 +391,110 @@ button {
    SECCIÓN NATY MARIN
 ========================= */
 
-.naty_section {
-  padding: 6rem 0;
-  background: #faf9f7;
+.naty_magazine {
+  padding: 8rem 4rem;
+  background: #fff;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-/* HERO */
-.naty_hero {
-  text-align: center;
-  margin-bottom: 4rem;
+/* INTRO */
+.naty_intro {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 6rem;
+  max-width: 1400px;
+  margin: 0 auto 8rem;
+  align-items: center;
 }
 
 .naty_eyebrow {
-  display: block;
-  font-size: 1.5rem;
-  letter-spacing: 0.25em;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
   opacity: 0.6;
-  margin-bottom: 1.2rem;
+  display: block;
+  margin-bottom: 1.5rem;
 }
 
-.naty_title_img {
-  max-width: 860px;  
+.naty_headline {
+  font-size: clamp(2.6rem, 4vw, 3.4rem);
+  line-height: 1.15;
+  margin-bottom: 2rem;
+}
+
+.naty_lead {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 520px;
+}
+
+.naty_intro_image img {
   width: 100%;
+  border-radius: 28px;
+}
+
+/* CONTENIDO */
+.naty_content {
+  max-width: 900px;
   margin: 0 auto;
 }
 
-/* GRID */
-.naty_grid {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 4rem;
-  align-items: start;
+.naty_content details {
+  border-top: 1px solid rgba(0,0,0,0.15);
+  padding: 2.2rem 0;
 }
 
-/* TEXTO */
-.naty_subtitle {
-  font-size: 1.6rem;
-  margin-bottom: 2.5rem;
-  line-height: 1.4;
-}
-
-/* DROPDOWNS */
-.naty_dropdown {
-  border-top: 1px solid rgba(0,0,0,0.08);
-  padding: 1.6rem 0;
-}
-
-.naty_dropdown:last-child {
-  border-bottom: 1px solid rgba(0,0,0,0.08);
-}
-
-.naty_dropdown summary {
-  cursor: pointer;
+.naty_content summary {
+  font-size: 1.1rem;
   font-weight: 600;
-  font-size: 1.05rem;
+  cursor: pointer;
   list-style: none;
-  position: relative;
 }
 
-.naty_dropdown summary::-webkit-details-marker {
+.naty_content summary::-webkit-details-marker {
   display: none;
 }
 
-.naty_dropdown summary::after {
-  content: "+";
-  position: absolute;
-  right: 0;
-  font-size: 1.2rem;
-}
-
-.naty_dropdown[open] summary::after {
-  content: "–";
-}
-
-.naty_paragraph {
-  margin-top: 1.2rem;
+.naty_content p {
+  margin-top: 1.4rem;
   line-height: 1.7;
-  opacity: 0.9;
 }
 
-.naty_paragraph.soft {
-  opacity: 0.8;
-}
-
-.naty_paragraph.commitment {
-  font-weight: 500;
-}
-
-/* PILARES */
-.naty_pillars p {
-  margin-top: 1rem;
-}
-
-/* QUOTES */
-.naty_quotes blockquote {
+.naty_content blockquote {
   margin-top: 1.5rem;
+  padding-left: 1.5rem;
+  border-left: 3px solid #000;
   font-style: italic;
   opacity: 0.85;
 }
 
-/* IMAGEN — FIJA + PREMIUM */
-.naty_image {
-  position: relative; /* ← ya no sticky */
-}
-
-.naty_photo {
-  max-width: 420px;
-  display: block;
-  margin: 0 auto;
-  border-radius: 22px;
-  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
-}
-
 /* CTA */
-.naty_consultoria {
-  margin-top: 5rem;
+.naty_cta_block {
   text-align: center;
+  margin-top: 7rem;
 }
 
-.naty_consultoria p {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
+.naty_cta_block p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
 }
 
-.naty_cta {
-  display: inline-block;
-  padding: 0.9rem 2.5rem;
-  border: 1px solid #214436;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-.naty_cta:hover {
-  background: #214436;
+.naty_cta_block a {
+  padding: 1.1rem 3rem;
+  border-radius: 40px;
+  background: #000;
   color: #fff;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
-  .naty_grid {
+  .naty_intro {
     grid-template-columns: 1fr;
   }
 
-  .naty_title_img {
-  max-width: 380px;
-}
-
-  .naty_image {
-    margin-top: 3rem;
+  .naty_magazine {
+    padding: 6rem 2rem;
   }
-
 }
 
 
