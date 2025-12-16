@@ -551,7 +551,6 @@ button {
 }
 
 
-
 .about_section {
   background: #faf8f6;
   padding: 120px 0;
@@ -608,269 +607,6 @@ button {
   }
 }
 
-
-/* SECCIÓN */
-.experiencia {
-  padding: 6rem 0;
-  background: #faf9f7;
-}
-
-.exp_titulo {
-  text-align: center;
-  font-size: 2.6rem;
-  margin-bottom: 1rem;
-}
-
-.exp_texto {
-  text-align: center;
-  max-width: 620px;
-  margin: 0 auto 4rem;
-  opacity: 0.8;
-  font-size: 1.05rem;
-}
-
-/* GRID */
-.exp_grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 3rem; /* MÁS AIRE */
-}
-
-/* BLOQUE */
-.exp_bloque {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-}
-
-/* IMAGEN */
-.exp_img {
-  width: 100%;
-  border-radius: 22px;
-  display: block;
-}
-
-/* BOTÓN */
-.exp_boton {
-  background: transparent;
-  border: none;
-  padding: 0.5rem 0;
-  font-size: 0.95rem;
-  font-weight: 500;
-  text-align: center;
-  cursor: pointer;
-  position: relative;
-  color: #9b6b4f;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.6rem;
-}
-
-/* FLECHA (AHORA SÍ SE VE BIEN) */
-.flecha {
-  width: 10px;
-  height: 10px;
-  border-right: 2px solid #9b6b4f;
-  border-bottom: 2px solid #9b6b4f;
-  transform: rotate(45deg);
-  transition: transform 0.3s ease;
-}
-
-/* ROTACIÓN */
-.flecha.rotar {
-  transform: rotate(-135deg);
-}
-
-/* CONTENIDO DESPLEGABLE */
-.exp_contenido {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease, opacity 0.3s ease;
-  opacity: 0;
-}
-
-.exp_contenido.mostrar {
-  max-height: 500px;
-  opacity: 1;
-}
-
-.exp_contenido p {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  opacity: 0.85;
-  padding-top: 0.5rem;
-}
-
-/* CTA */
-.read_bt_1 {
-  margin-top: 5rem;
-  text-align: center;
-}
-
-.read_bt_1 a {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  padding: 1rem 2.6rem;
-  border-radius: 999px;
-  background: #1f3d2b;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.read_bt_1 img {
-  width: 20px;
-}
-
-/* RESPONSIVE */
-@media (max-width: 1100px) {
-  .exp_grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .exp_grid {
-    grid-template-columns: 1fr;
-  }
-
-  .exp_titulo {
-    font-size: 2rem;
-  }
-}
-
-
-.experiencia {
-  padding: 100px 0;
-  background-color: #fffefc;
-  text-align: center;
-}
-
-.exp_titulo {
-  font-size: 42px;
-  color: #1a1a1a;
-  font-weight: 700;
-  margin-bottom: 16px;
-}
-
-.exp_texto {
-  font-size: 18px;
-  color: #555;
-  max-width: 850px;
-  margin: 0 auto 60px;
-  line-height: 1.7;
-}
-
-.exp_grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 60px;
-  justify-items: center;
-  align-items: start;
-}
-
-.exp_bloque {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 340px;
-}
-
-.exp_img {
-  width: 100%;
-  border-radius: 20px;
-  object-fit: cover;
-  aspect-ratio: 4 / 3;
-  transition: transform 0.4s ease;
-}
-
-.exp_img:hover {
-  transform: scale(1.03);
-}
-
-.exp_boton {
-  margin-top: 18px;
-  background: none;
-  border: none;
-  color: #a98068;
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 0.4px;
-  text-transform: uppercase;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  transition: color 0.3s ease;
-}
-
-.exp_boton:hover {
-  color: #8e6b59;
-}
-
-.flecha {
-  width: 10px;
-  height: 10px;
-  border-left: 2px solid currentColor;
-  border-bottom: 2px solid currentColor;
-  transform: rotate(-45deg);
-  margin-left: 6px;
-  margin-top: 2px;
-  transition: transform 0.3s ease;
-}
-
-.flecha.rotar {
-  transform: rotate(135deg);
-}
-
-.exp_contenido {
-  display: none;
-  max-width: 340px;
-  margin-top: 12px;
-  font-size: 15px;
-  color: #333;
-  line-height: 1.6;
-  text-align: justify;
-  animation: fadeIn 0.4s ease;
-}
-
-.exp_contenido.mostrar {
-  display: block;
-}
-
-.exp_cta {
-  margin-top: 90px;
-  background: #f8fdfa;
-  border-radius: 20px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
-  padding: 30px 20px;
-  max-width: 850px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 17px;
-  color: #4c9d95;
-  font-weight: 500;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@media (max-width: 992px) {
-  .exp_grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .exp_grid {
-    grid-template-columns: 1fr;
-  }
-}
 
 /* Imagen título Naty Marin */
 .naty_title_img {
@@ -1129,6 +865,119 @@ button {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* SECCIÓN */
+.experiencia {
+  padding: 8rem 0;
+  background: #f3f2ef;
+}
+
+.experiencia .container {
+  max-width: 1400px; /* más ancho */
+}
+
+/* TÍTULOS */
+.exp_titulo {
+  text-align: center;
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+}
+
+.exp_texto {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 5rem;
+  font-size: 1.15rem;
+  opacity: 0.75;
+}
+
+/* GRID: 2 COLUMNAS POTENTES */
+.exp_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem 4rem;
+}
+
+/* CARD */
+.exp_bloque {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+/* IMAGEN PROTAGONISTA */
+.exp_img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 28px;
+}
+
+/* BOTÓN / TÍTULO */
+.exp_boton {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #9b6b4f;
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  text-align: center;
+}
+
+/* FLECHA REAL */
+.flecha {
+  width: 22px;
+  height: 22px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: transform 0.3s ease;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox=
+);
+  }
+
+/* CTA WHATSAPP – PROTAGONISTA */
+.read_bt_1 {
+  margin-top: 5rem; /* más cerca de los servicios */
+  text-align: center;
+}
+
+.read_bt_1 a {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.3rem 3.4rem;
+  background: #1f3d2b;
+  color: #fff;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* HOVER = VIDA */
+.read_bt_1 a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.2);
+}
+
+/* ICONO WHATSAPP MÁS GRANDE Y CERCANO */
+.read_bt_1 img {
+  width: 34px;
+  height: 34px;
+  margin: 0;
+}
+
 
 
 /* Grid de marcas */
