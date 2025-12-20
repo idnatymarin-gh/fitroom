@@ -735,28 +735,78 @@ button {
    NATY MARIN PRESENTS
 ========================= */
 
-.brands_section {
-  padding: 120px 0;
-  background: #faf8f6;
+.quantum-launch {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 120px 40px 140px;
+  background: radial-gradient(
+    ellipse at center,
+    #2f5f4c 0%,
+    #163a2d 70%,
+    #0f2a20 100%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  overflow: hidden;
 }
 
-.brands_title h1 {
-  font-size: 42px;
-  font-weight: 300;
-  color: #1a1a1a;
-  margin-bottom: 10px;
-  margin-top: 10px;
+/* Logo Naty Marin */
+.nm-logo {
+  position: absolute;
+  top: 40px;
 }
 
+.nm-logo img {
+  height: 42px;
+  opacity: 0.9;
+}
 
-.brands_subtitle {
-  font-size: 22px;
-  color: #777;
-  max-width: 720px;
-  margin: 0 auto 70px;
+/* Título principal */
+.launch-title {
+  color: #ffffff;
+  font-size: clamp(48px, 7vw, 96px);
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+/* Subtítulo */
+.launch-subtitle {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: clamp(16px, 2vw, 20px);
+  max-width: 780px;
+  margin-bottom: 60px;
   line-height: 1.6;
 }
+
+/* CTA */
+.launch-cta {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+}
+
+/* Logo Quantum */
+.quantum-logo img {
+  width: clamp(280px, 40vw, 520px);
+  transition: transform 0.6s ease, filter 0.6s ease;
+  filter: drop-shadow(0 0 0 rgba(212, 175, 55, 0));
+}
+
+/* Hover poderoso */
+.quantum-logo:hover img {
+  transform: scale(1.18);
+  filter: drop-shadow(0 0 40px rgba(212, 175, 55, 0.75));
+}
+
+
 
 /* ================================
    SERVICIOS – GRID PRINCIPAL
